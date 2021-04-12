@@ -13,7 +13,7 @@ files are stored.
 2. Separate “Active” and “Calibration” files for each condition at each time
 point.
 
-    ```bash
+```bash
 # example tree directory
 data/raw/project_A/P001
 ├── BL
