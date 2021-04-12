@@ -40,7 +40,6 @@ data/raw/project_A/P001
     what these measures are, there is a paper cited at the top of this function
     that describes them and their calculation.
 
-
 4.	Output files:
 
     * A .csv file of the COP time series for each participant at each time point,
