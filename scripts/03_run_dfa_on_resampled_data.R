@@ -1,13 +1,15 @@
+# Environment ------------------------------------------------------------------
 library(tidyverse)
 library(here)
 
 source(here("src", "R", "analysis.R"))
 
-
+# Data IO ----------------------------------------------------------------------
 filepath <- here("data", "processed")
 filesR <- list.files(filepath, pattern = "resampled50Hz", full.names = TRUE,
                      recursive = TRUE)
 
+# DFA Analysis -----------------------------------------------------------------
 dfa_df <- tibble(
     subject_id   = character(0),
     timepoint    = character(0),
@@ -32,6 +34,6 @@ for (ith_file in 1:length(filesR)) {
     dfa_df[ith_file, 6] <- dfa_result[2]
 }
 
-
+# save file to outputs
 write_csv(dfa_df, here("outputs", "results", "individual_dfa.csv"))
 
