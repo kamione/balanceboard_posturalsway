@@ -35,7 +35,7 @@ data/raw/project_A/P001
 3. This script calls two functions from "src/R/data.R"
 
     * calculate_cop.R: Calculates the Center of Pressure (COP)
-    
+
     * calculate_sway_measures.R: Takes the COP time series output from
     calculate_cop.R and calculates a number of postural sway measures. To know
     what these measures are, there is a paper cited at the top of this function
@@ -44,10 +44,10 @@ data/raw/project_A/P001
 4. Output files:
 
     * A .csv file of the COP time series for each participant at each time
-    point, save to data/processed
+    point, save to "data/processed"
 
     * A .csv file of the sway measures for all participants, save to
-    outputs/results/individual_sway_measures.csv
+    "outputs/results/individual_sway_measures.csv"
 
 **02_resample_cop_timeseries.m**
 
